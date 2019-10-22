@@ -1,5 +1,28 @@
 @charset "UTF-8";
 
+.backimg {
+    background-image: url(../img/grass-3253361_1920.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 35vh;
+}
+
+.backimg h2 {
+    color: white;
+    width: 100%;
+    font-size: 50px;
+    /* background-color: white; */
+    padding: 100px 0;
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-bottom: 100px; */
+    font-family: cursive;
+    font-style: oblique;
+    text-shadow: 0 1px 0 #aaa, 0 2px 0 #aaa, 0 3px 0 #aaa, 0 4px 0 #aaa, 0 5px 0 #aaa, 0 6px 0 #aaa, 0 7px 0 #333;
+}
+
 .container-1 {
     height: 100vh;
     background-image: url(../img/work-731198_1920.jpg);
@@ -29,13 +52,14 @@ header {
 }
 
 #page1, #page2, #page3 {
-    padding-top: 10%;
+    padding-top: 9%;
     margin-top: -10%;
 }
 
 
 
 header h1 {
+    color: white;
     display: flex;
     justify-content: center;
     font-size: 40px;
@@ -101,7 +125,7 @@ main h1 {
     font-size: 90px;
     /* background-color: white; */
     padding: 100px 50px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     text-align: center;
     margin-bottom: 100px;
     font-family: cursive;
@@ -111,7 +135,7 @@ main h1 {
 
 .container-2 {
     width: 97%;
-    height: 90vh;
+    height: 95vh;
     padding-top: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -196,6 +220,7 @@ h2 {
 .container-3 {
     height: 200vh;
     width: 97%;
+    padding-top: 20px;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -209,7 +234,7 @@ h2 {
 }
 
 .mainbox {
-    width: 40%;
+    width: 35%;
     /* border: 8px ridge green; */
     padding:20px;
     margin-bottom: 20px;
@@ -231,6 +256,7 @@ h2 {
 
 .container-4 {
     height: 150vh;
+    padding-top: 20px;
     width: 97%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -269,7 +295,7 @@ h2 {
 
 footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     background-color: green;
     height: 80px;
@@ -279,6 +305,52 @@ footer {
 footer i {
     color: white;
     margin-right: 30px;
+}
+
+footer p {
+    font-size: 20px;
+    color: white;
+    margin-left: 35px;
+    font-family: cursive;
+}
+
+@media screen and (max-width:1200px) {
+    .textbox h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+
+    #page1, #page2, #page3 {
+        padding-top: 13%;
+        margin-top: -13%;
+    }
+
+    .text h4 {
+        font-size: 13px;
+    }
+    .box p{
+        font-size: 14px;
+    }
+
+    .mainbox p {
+        font-size: 15px;
+    }
+
+    .topic p {
+        font-size: 15px;
+    }
+
+    .container-3, .container-4 {
+        height: 160vh;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    header nav {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {

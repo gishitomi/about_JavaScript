@@ -4,13 +4,21 @@
     height: 100vh;
     background-image: url(../img/work-731198_1920.jpg);
     /* padding-top: 10px; */
+        /* 繰り返しの設定 */
+        background-repeat: no-repeat;
+        /* 背景画像の位置 */
+        background-position: center;
+        /* 画像サイズの設定(cover : 画面いっぱい) */
+        background-size:  cover;
+        /* スクロール時の背景画像の設定(fixed: 常に固定) */
+        background-attachment: fixed;
 }
 
 header {
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    height: 80px;
+    height: 10%;
     color: white;
     /* height: 100px; */
     background-color: rgb(76, 117, 76);
@@ -20,8 +28,8 @@ header {
     font-family: cursive;
 }
 
-#page1, #page2, #page3, #page4 {
-    padding-top: 8%;
+#page1, #page2, #page3 {
+    padding-top: 10%;
     margin-top: -10%;
 }
 
@@ -33,11 +41,13 @@ header h1 {
     font-size: 40px;
     text-align: center;
     margin-top: 10px;
+    text-shadow: 0 1px 0 #aaa, 0 2px 0 #aaa, 0 3px 0 #aaa, 0 4px 0 #aaa, 0 5px 0 #aaa, 0 6px 0 #aaa, 0 7px 0 #333;
 }
 
 nav ul {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 nav li {
@@ -48,25 +58,55 @@ nav a {
     text-decoration: none;
 }
 
+.res-menu {
+    display: none;
+}
+
+
+.humburger {
+    width: 28px;
+    height: 30px;
+    margin: 30px auto 10px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.submenu {
+    display: none;
+}
+
+.humburger span,
+.humburger span::before,
+.humburger span::after {
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+    border-radius:  2px;
+    position: relative;
+    transition: 0.5s;
+    display: block;
+    /* cursor: pointer; */
+}
+
 main {
     height: 90%;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 main h1 {
-    color: green;
+    color: white;
     width: 60%;
     font-size: 90px;
-    background-color: white;
+    /* background-color: white; */
     padding: 100px 50px;
     border-radius: 50%;
     text-align: center;
     margin-bottom: 100px;
     font-family: cursive;
     font-style: oblique;
+    text-shadow: 0 1px 0 #aaa, 0 2px 0 #aaa, 0 3px 0 #aaa, 0 4px 0 #aaa, 0 5px 0 #aaa, 0 6px 0 #aaa, 0 7px 0 #333;
 }
 
 .container-2 {
@@ -170,7 +210,7 @@ h2 {
 
 .mainbox {
     width: 40%;
-    border: 8px ridge green;
+    /* border: 8px ridge green; */
     padding:20px;
     margin-bottom: 20px;
 }
@@ -241,3 +281,64 @@ footer i {
     margin-right: 30px;
 }
 
+@media screen and (max-width: 768px) {
+
+    #page1, #page2, #page3 {
+        padding-top: 15%;
+        margin-top: -15%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .humburger {
+        display: flex;
+    }
+    
+
+    header a {
+        font-size:15px;
+    }
+
+    .container-2,
+    .container-3{
+        height: 140vh;
+    }
+
+    .container-4 {
+        height: 120vh;
+    }
+
+    .text {
+        flex-direction: column;
+    }
+    .text h4 {
+        line-height: 30px;
+        width: 80%;
+    }
+    .textbox {
+        width: 80%;
+    }
+
+    .textbox h5, .textbox h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .subtext {
+        margin:25px 20px;
+        margin-bottom: 0;
+        width: 100%;
+        font-size: 21px;
+    }
+
+    .topic h3 {
+        font-size: 30px;
+        color: green;
+    }
+    
+    .topic p{
+        font-size: 20px;
+    }
+}

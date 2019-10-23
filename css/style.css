@@ -472,13 +472,20 @@ footer p {
     .mainbox {
         width: 80%;
     }
+    .container-1 {
+        background-color: rgb(1, 100, 1);
+        background-image: url(#);
+    }
     .container-2 {
         height: 115vh;
     }
     .container-3 {
-        height: 160vh;
+        height: 180vh;
     }
     .container-4 {
         height: 100vh;
+    }
+    .backimg {
+        display: none;
     }
 }
